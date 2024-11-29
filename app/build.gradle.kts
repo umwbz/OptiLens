@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.optilens"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.optilens"
@@ -33,27 +33,24 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+        mlModelBinding = true
+    }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.metadata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation (libs.androidx.appcompat.v161)
-    implementation (libs.androidx.constraintlayout.v214)
-    implementation (libs.material.v190)
-    implementation (libs.androidx.navigation.fragment.ktx)
-    implementation (libs.androidx.navigation.ui.ktx)
-    implementation (libs.androidx.room.runtime)
-    implementation (libs.firebase.auth)
-    implementation (libs.tensorflow.lite)
-    implementation (libs.androidx.camera.camera2)
-    implementation ("com.google.android.material:material:1.12.0")
-
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.viewpager2)
 }

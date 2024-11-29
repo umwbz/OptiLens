@@ -28,7 +28,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/group_3"
-                    android:contentDescription="Group Image"
                     android:scaleType="centerCrop"
                     android:layout_alignParentTop="true" />
 
@@ -37,7 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
-                    android:text="Create an account to get your eyes checked and see a brighter future"
+                    android:text="@string/about_optilens"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="14sp" />
@@ -48,16 +47,14 @@
                 android:layout_width="78dp"
                 android:layout_height="98dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/optilens_logo1_2"
-                android:contentDescription="Optilens Logo" />
+                android:src="@drawable/optilens_logo1_2" />
 
             <ImageView
                 android:id="@+id/logoText"
                 android:layout_width="107dp"
                 android:layout_height="31dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/optilens_logo1_4"
-                android:contentDescription="Optilens Text" />
+                android:src="@drawable/optilens_logo1_4" />
         </LinearLayout>
 
         <!-- Title Section -->
@@ -68,7 +65,7 @@
             android:layout_below="@id/logoSection"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
-            android:text="SIGN-UP"
+            android:text="@string/signup"
             android:textColor="@android:color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -94,6 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Username"
+                    style="@style/TextFieldStyle"
                     android:drawableStart="@drawable/ic_account_circle"
                     android:drawablePadding="10dp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -109,6 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
+                    style="@style/TextFieldStyle"
                     android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="10dp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -124,6 +123,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Password"
                     android:inputType="textPassword"
+                    style="@style/TextFieldStyle"
                     android:drawableStart="@drawable/ic_key"
                     android:drawableEnd="@drawable/ic_visibility"
                     android:drawablePadding="10dp" />
@@ -140,25 +140,27 @@
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:backgroundTint="@color/primary"
-            android:text="SIGN UP"
+            android:text="@string/signup"
             android:textColor="@android:color/white"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            style="@style/ButtonStyle"/>
 
         <!-- Login Prompt -->
         <LinearLayout
-            android:id="@+id/signupSection"
+            android:id="@+id/siginSection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="800dp"
+            android:layout_below="@id/signUpButton"
+            android:layout_marginTop="15dp"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Have an account?"
+                android:text="@string/have_an_account"
                 android:textSize="14sp" />
             <TextView
-                android:id="@+id/signUpLink"
+                android:id="@+id/signInLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
