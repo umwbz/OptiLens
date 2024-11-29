@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- Logo Section -->
+    <RelativeLayout
+        android:id="@+id/logoSection"
+        android:layout_width="107dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="91dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/optilensLogo"
+            android:layout_width="78dp"
+            android:layout_height="98dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/optilens_logo1_2"
+            android:contentDescription="Optilens Logo 1" />
+        <ImageView
+            android:id="@+id/optilensText"
+            android:layout_width="107dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/optilensLogo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/optilens_logo1_4"
+            android:contentDescription="Optilens Text" />
+    </RelativeLayout>
+
+    <!-- LOGIN Title -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:text="LOGIN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameField"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginStart="49dp"
+        app:boxBackgroundMode="outline"
+        app:boxBackground="@drawable/rounded_border"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_account_circle"
+            android:drawablePadding="10dp"
+            android:padding="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordField"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="349dp"
+        android:layout_marginStart="49dp"
+        app:boxBackgroundMode="outline"
+        app:boxBackground="@drawable/rounded_border"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_key"
+            android:drawableEnd="@drawable/ic_visibility"
+            android:drawablePadding="10dp"
+            android:padding="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Forget Password -->
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:textSize="14sp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="49dp"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginStart="49dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:cornerRadius="20dp" />
+
+    <!-- Signup Link -->
+    <LinearLayout
+        android:id="@+id/signupSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account?"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/signUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Continue with Google -->
+    <Button
+        android:id="@+id/googleLoginButton"
+        android:layout_width="297dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="49dp"
+        android:backgroundTint="@android:color/white"
+        android:drawableStart="@drawable/ic_google"
+        android:drawablePadding="10dp"
+        android:text="Continue with Google"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:cornerRadius="20dp" />
+
+    <!-- Footer Section -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/group_4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OptiLens is a mobile application for self-diagnosis of cataracts and blindness"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:layout_marginBottom="400dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

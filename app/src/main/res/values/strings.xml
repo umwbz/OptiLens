@@ -1,3 +1,20 @@
 <resources>
+    <!-- General Strings -->
     <string name="app_name">OptiLens</string>
+
+    <!-- Login Page -->
+    <string name="login">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="dont_have_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_button">Login</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="self_diagnosis_description">
+        OptiLens is a mobile application for <b>self-diagnosis</b> of <b>cataracts</b> and <b>blindness</b>.
+    </string>
+
+    <!-- Other -->
+    <string name="or_separator">or</string>
 </resources>
